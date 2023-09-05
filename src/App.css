@@ -1,9 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: monospace;
-}
-body{
+  }
+  
+  body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,24 +14,29 @@ body{
     background-color: #e3e3e3;
     color: #080808;
     padding: 10px 0;
-}
-.container{
+  }
+  
+  .container {
     margin: 0 auto;
     width: 96%;
     max-width: 800px;
-}
-.table{
+  }
+  
+  .table {
     width: 100%;
     box-sizing: border-box;
-}
-.item.header{
+  }
+  
+  .item.header {
     background-color: #0c0cb2;
     color: #f7f7f7;
-}
-.item.header p{
+  }
+  
+  .item.header p {
     font-weight: bold;
-}
-.item{
+  }
+  
+  .item {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -38,43 +44,77 @@ body{
     border: 1px solid #08080833;
     margin: 6px 0px;
     background-color: #e3e3e3;
-}
-.item p{
+  }
+  
+  .item p {
     padding: 8px 2px;
     width: 100%;
     font-size: 18px;
     text-align: center;
     border: 1px solid #08080833;
-}
-.item .delete{
+  }
+  
+  .item .delete {
     background-color: #b90c0c;
     color: #e3e3e3;
     font-size: 20px;
     cursor: pointer;
     transition-duration: 0.3s;
-}
-.item .delete:hover{
+  }
+  
+  .item .delete:hover {
     opacity: 0.8;
-}
-form{
+  }
+  
+  /* Add styles for quantity column */
+  .item .quantity {
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .item .quantity button {
+    background-color: #0cb90c;
+    color: #e3e3e3;
+    font-size: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    transition-duration: 0.3s;
+  }
+  
+  .item .quantity button:hover {
+    opacity: 0.8;
+  }
+  
+  form {
     height: 40px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-form *{
+  }
+  
+  form * {
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #08080833;
     padding: 2px 4px;
-    font-size: 16px
-}
-form input[type="text"], form input[type="number"]{
+    font-size: 16px;
+  }
+  
+  form input[type="text"],
+  form input[type="number"] {
     outline: none;
     background-color: #e3e3e3;
-}
-form input[type="submit"]{
+  }
+  
+  form input[type="submit"] {
     font-weight: bold;
     background-color: #0cb90c;
     color: #e3e3e3;
@@ -82,12 +122,15 @@ form input[type="submit"]{
     letter-spacing: 0.6px;
     cursor: pointer;
     transition-duration: 0.3s;
-}
-form input[type="submit"]:hover{
+  }
+  
+  form input[type="submit"]:hover {
     opacity: 0.8;
-}
-.text{
+  }
+  
+  .text {
     padding: 10px;
     font-size: 18px;
     border: 2px solid #08080833;
-}
+  }
+  
